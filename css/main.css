@@ -2,9 +2,8 @@
 body{
     margin: 0;
     font-family: 'メイリオ','hiragino kaku Gothic Pro',sans-serif;
-    
-    
 }
+
 .top{
     background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
@@ -61,9 +60,7 @@ body{
     float: left;
     width:auto
 }
-.Header{
-    width: 100vh;
-}
+
 
 .topimg{
     width:100%;
@@ -75,7 +72,6 @@ body{
     
 }
 #works {
-    width: 100vh;
     text-align: center;
     background-image: url(../img/bgimg.jpg);
 }
@@ -84,7 +80,6 @@ body{
     background-image: url(../img/university.png);
 }
 .content{
-    width: 100vh;
     background-color: rgba(255, 255, 255, 0.6);
     display: inline-block;
     padding: 10px 20px 20px;
@@ -146,7 +141,7 @@ body{
 
 
 .footer{
-    width: 100vh;
+    
     display: flex;
     height: 80px;
     /* width: 100%; */
@@ -180,11 +175,17 @@ body{
 		opacity: 1;
 	}
 }
-@media(min-width: 768px){
+@media(max-width: 768px){
+    .Header{
+        width: 100vh;
+    }
     .top:after{
         content: "";
         display: block;
         clear:both
+    }
+    .footer{
+        width: 100vh;
     }
     .site h1 a{
         font-size:xx-large;
@@ -204,12 +205,13 @@ body{
         width: 100%;
         
     }
-    .content{
-        width: 80%;
-        
-        
-    }
     
+    .content{
+        width: 100vh;
+    }
+    #works {
+        width: 100vh;
+    }
     .card :after{
         float:left;
         width: 100%;
